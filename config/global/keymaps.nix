@@ -1,4 +1,8 @@
 {
+  globals = {
+    mapleader = " ";
+  };
+
   keymaps = [
     # Open buffer navigation
     {
