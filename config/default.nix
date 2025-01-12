@@ -1,12 +1,7 @@
 {
   imports = [
-    ./global/keymaps.nix
-    ./global/opts.nix
-
-    ./plugins/bufferline.nix
-    ./plugins/nvim-tree.nix
-    ./plugins/telescope.nix
-    ./plugins/toggleTerm.nix
+    ./global
+    ./plugins
   ];
 
   colorschemes.tokyonight.enable = true;
