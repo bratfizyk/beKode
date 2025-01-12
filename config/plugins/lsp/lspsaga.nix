@@ -48,5 +48,11 @@
       options.desc = "Lsp Goto Definition";
       action = "<cmd>Lspsaga goto_definition<CR>";
     }
+    {
+      mode = "n";
+      key = "<leader>li";
+      options.desc = "Lsp Show Line Diagnostics";
+      action = "<cmd>Lspsaga show_line_diagnostics<CR>";
+    }
   ];
 }
