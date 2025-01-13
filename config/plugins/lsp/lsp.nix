@@ -4,12 +4,21 @@
       enable = true;
       servers = {
         nil_ls.enable = true;
+        ts_ls.enable = true;
+        fsautocomplete.enable = true;
+        omnisharp.enable = true;
         hls = {
           enable = true;
           # Make sure to open Haskell projects from a dev shell containing GHC
           installGhc = false;
         };
-        ts_ls.enable = true;
+
+        ltex = {
+          enable = true;
+          settings = {
+            completionEnabled = true;
+          };
+        };
       };
     };
     lspkind = {
