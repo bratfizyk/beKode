@@ -19,11 +19,12 @@
         };
 
         sources = [
-          {name = "path";}
-          {name = "nvim_lsp";}
-          {name = "luasnip";}
-          {name = "crates";}
-          {name = "buffer";}
+          { name = "nvim_lsp"; }
+          { name = "treesitter"; }
+          { name = "path"; }
+          { name = "luasnip"; }
+          { name = "crates"; }
+          { name = "buffer"; }
         ];
       };
     };

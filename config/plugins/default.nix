@@ -5,5 +5,6 @@
     ./lsp
     ./toggleTerm.nix
     ./telescope.nix
+    ./treesitter.nix
   ];
 }

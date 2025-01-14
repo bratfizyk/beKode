@@ -5,19 +5,14 @@
       servers = {
         nil_ls.enable = true;
         ts_ls.enable = true;
-        fsautocomplete.enable = true;
+        #fsautocomplete.enable = true;
         omnisharp.enable = true;
+        texlab.enable = true;
+
         hls = {
           enable = true;
           # Make sure to open Haskell projects from a dev shell containing GHC
           installGhc = false;
-        };
-
-        ltex = {
-          enable = true;
-          settings = {
-            completionEnabled = true;
-          };
         };
       };
     };
