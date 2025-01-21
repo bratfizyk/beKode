@@ -1,7 +1,22 @@
 {
   plugins = {
-    bufferline.enable = true;
     web-devicons.enable = true;
+    bufferline = {
+      enable = true;
+      settings = {
+        options = {
+          diagnostics = "nvim_lsp";
+          offsets = [
+            {
+              filetype = "NvimTree";
+              highlight = "Directory";
+              text = "File Explorer";
+              text_align = "center";
+            }
+          ];
+        };
+      };
+    };
   };
   
   keymaps = [
