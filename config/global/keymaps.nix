@@ -70,9 +70,26 @@
         desc = "Reduce the height of the current buffer.";
       };
     }
+    # Stay in indent mode
+    {
+      action = "<gv";
+      key = "<";
+      mode = "v";
+      options = {
+        desc = "Reduce code indentation.";
+      };
+    }
+    {
+      action = ">gv";
+      key = ">";
+      mode = "v";
+      options = {
+        desc = "Increase code indentation.";
+      };
+    }
     # Move lines
     {
-      action = "<cmd>m .-2<CR>==";
+      action = ":m .-2<CR>==";
       key = "<A-Up>";
       mode = "n";
       options = {
@@ -80,12 +97,29 @@
       };
     }
     {
-      action = "<cmd>m .+1<CR>==";
+      action = ":m '<-2<CR>gv=gv";
+      key = "<A-Up>";
+      mode = "v";
+      options = {
+        desc = "Move the current line up.";
+      };
+    }
+    {
+      action = ":m .+1<CR>==";
       key = "<A-Down>";
       mode = "n";
       options = {
         desc = "Move the current line down.";
       };
     }
+    {
+      action = ":m '>+1<CR>gv=gv";
+      key = "<A-Down>";
+      mode = "v";
+      options = {
+        desc = "Move the current line down.";
+      };
+    }
+
   ];
 }
