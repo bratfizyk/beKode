@@ -9,6 +9,7 @@
     settings = {
       transparent = true;
       underline_links = true;
+      disable_nvimtree_bg = true;
     };
   };
 

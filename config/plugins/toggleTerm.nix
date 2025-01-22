@@ -1,11 +1,28 @@
 {
   plugins = {
-    toggleterm.enable = true;
+    toggleterm = {
+      enable = true;
+      settings = {
+        size = 20;
+        hide_numbers = true;
+        shade_terminals = true;
+        direction = "float";
+        close_on_exit = true;
+        float_opts = {
+          border = "curved";
+          winblend = 0;
+          highlights = {
+            border = "Normal";
+            background = "Normal";
+          };
+        };
+      };
+    };
   };
 
   keymaps = [
     {
-      action = "<cmd>ToggleTerm size=20 direction=horizontal<cr>";
+      action = "<cmd>ToggleTerm<cr>";
       key = "<C-`>";
       mode = ["n" "i" "v" "s" "t"];
       options = {
