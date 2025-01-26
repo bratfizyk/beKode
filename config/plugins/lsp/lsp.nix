@@ -7,6 +7,7 @@
         ts_ls.enable = true;
         #fsautocomplete.enable = true;
         omnisharp.enable = true;
+        pyright.enable = true;
         texlab.enable = true;
 
         hls = {
