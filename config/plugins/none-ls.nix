@@ -5,7 +5,11 @@
       sources = {
         diagnostics = {
           cmake_lint.enable = true;
-          mypy.enable = true;
+          pylint = {
+            enable = true;
+            # Ensure there is an instance in virtualenv
+            package = null;
+          };
         };
         formatting = {
           black.enable = true;

@@ -30,6 +30,14 @@
       };
     }
     {
+      action = "<cmd>ToggleTerm<cr>";
+      key = "<leader>tt";
+      mode = ["n" "i" "v" "s" "t"];
+      options = {
+        desc = "Toggle Termianl panel.";
+      };
+    }
+    {
       action = "<C-\\><C-n>";
       key = "<esc>";
       mode = "t";
