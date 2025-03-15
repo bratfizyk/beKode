@@ -120,6 +120,23 @@
         desc = "Move the current line down.";
       };
     }
-
+    # Home brings to the beginning of text, not to column 0
+    {
+      action = "^";
+      key = "<Home>";
+      mode = "n";
+      options = {
+        desc = "Move cursor the the beginning of text.";
+      };
+    }
+    {
+      action = "<C-O>^";
+      key = "<Home>";
+      mode = "i";
+      options = {
+        desc = "Move cursor the the beginning of text.";
+        noremap = true;
+      };
+    }
   ];
 }
