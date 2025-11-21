@@ -1,14 +1,14 @@
 {
   plugins.lspsaga = {
     enable = true;
-
-    lightbulb = {
-      enable = true;
-      virtualText = false;
+    settings = {
+      #symbol_in_winbar.enable = false;
+      lightbulb = {
+        enable = true;
+        virtualText = false;
+      };
+      ui.border = "rounded";
     };
-
-    symbolInWinbar.enable = false;
-    ui.border = "rounded";
   };
 
   keymaps = [

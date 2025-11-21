@@ -3,45 +3,49 @@
     web-devicons.enable = true;
     nvim-tree = {
       enable = true;
-      hijackUnnamedBufferWhenOpening = true;
       openOnSetup = true;
-      filters.dotfiles = true;
-      git = {
-        enable = true;
-      };
-      renderer = {
-        highlightGit = true;
-        icons = {
-          show = {
-            file = true;
-            folder = true;
-            folderArrow = true;
-            git = true;
-          };
-          glyphs = {
-            default = "";
-            symlink = "";
-            git = {
-              unstaged = "";
-              staged = "";
-              unmerged = "";
-              renamed = "➜";
-              deleted = "";
-              untracked = "";
-              ignored = "◌";
+      settings = {
+        hijack_unnamed_buffer_when_opening = true;
+        git = {
+          enable = true;
+        };
+        filters = {
+          dotfiles = true;
+        };
+        view = {
+          width = 30;
+        };
+        renderer = {
+          highlight_git = true;
+          icons = {
+            show = {
+              file = true;
+              folder = true;
+              folder_arrow = true;
+              git = true;
             };
-            folder = {
-              default = "";
-              open = "";
-              empty = "";
-              emptyOpen = "";
-              symlink = "";
+            glyphs = {
+              default = "";
+              symlink = "";
+              git = {
+                unstaged = "";
+                staged = "";
+                unmerged = "";
+                renamed = "➜";
+                deleted = "";
+                untracked = "";
+                ignored = "◌";
+              };
+              folder = {
+                default = "";
+                open = "";
+                empty = "";
+                empty_open = "";
+                symlink = "";
+              };
             };
           };
         };
-      };
-      view = {
-        width = 30;
       };
     };
   };
