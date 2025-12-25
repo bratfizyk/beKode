@@ -5,11 +5,7 @@
     rainbow-delimiters.enable = true;
     treesitter = {
       enable = true;
-      grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
-        haskell
-        javascript
-        typescript
-      ];
+      grammarPackages = pkgs.vimPlugins.nvim-treesitter.passthru.allGrammars;
       settings = {
         indent.enable = true;
         highlight.enable = true;
