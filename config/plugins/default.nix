@@ -1,3 +1,5 @@
+{ pkgs }:
+
 {
   imports = [
     ./autopairs.nix
@@ -8,6 +10,6 @@
     ./lsp
     ./toggleTerm.nix
     ./telescope.nix
-    ./treesitter.nix
+    (import ./treesitter.nix { inherit pkgs; })
   ];
 }

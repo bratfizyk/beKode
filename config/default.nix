@@ -1,7 +1,9 @@
+{ pkgs }:
+
 {
   imports = [
     ./global
-    ./plugins
+    (import ./plugins { inherit pkgs; })
   ];
 
   colorschemes.vscode = {

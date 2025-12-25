@@ -24,7 +24,7 @@
           nixvimLib = nixvim.lib.${system};
           nixvimModule = {
             inherit pkgs;
-            module = import ./config;
+            module = import ./config { inherit pkgs; };
           };
           beKode = nixvim'.makeNixvimWithModule nixvimModule;
         in
