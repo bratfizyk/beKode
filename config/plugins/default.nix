@@ -10,6 +10,6 @@
     ./lsp
     ./toggleTerm.nix
     ./telescope.nix
-    (import ./treesitter.nix { inherit pkgs; })
+    ./treesitter.nix
   ];
 }

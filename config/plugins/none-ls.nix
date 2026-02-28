@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   plugins = {
     none-ls = {
@@ -15,7 +17,10 @@
           black.enable = true;
           # csharpier.enable = true;
           cmake_format.enable = true;
-          nixfmt.enable = true;
+          nixfmt = {
+            enable = true;
+            package = pkgs.nixfmt;
+          };
           markdownlint.enable = true;
         };
       };
